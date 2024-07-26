@@ -9,8 +9,8 @@ const NavBar = () => {
 
   return (
     <div className='flex bg-slate-200 p-3'>
-        <Link href='/' className='mr-5'>Next.js</Link>
-        <Link href='/users' className='mr-5'>Users</Link>
+        <Link href='/' className='mr-5'>Home</Link>
+        <Link href='/dashboard' className='mr-5'>Dashboard</Link>
         { status ==='loading' && <div>Loading...</div>}
         {status === 'authenticated' && <div>{session.user!.name}
             <Link className='ml-3' href='./api/auth/signout'>Sing out</Link>
